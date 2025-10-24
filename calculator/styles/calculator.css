@@ -1,28 +1,36 @@
-html {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
-h1 {
-    background-color: aqua;
+
+header{
+    width: 100%;
+    background-color: aquamarine;
+    text-align: center;
 }
-
-
 body {
     margin: 0 auto;
     max-width: 1000px;
+    min-width: 320px;
     background-color: antiquewhite;
 }
 
 #calculator {
     background-color: aliceblue;
-    width: 31em;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr;
     gap: 0.5em;
+    max-width: 320px;
 
+}
+#buttons{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 0.5em;
 }
 #calculator button{
     width: 100%;
@@ -52,9 +60,6 @@ body {
 #screen p{
     font-size: 2.5em;
     font-weight: bold;
-    position: absolute;
-    top: -1em;
-    right: 0;
 }
 
 
@@ -64,7 +69,10 @@ body {
     background-color: black;
     /* margin: 0.1em; */
     /* margin: 0 auto; */
-    grid-column: 1/3;
+    /* grid-column: 1/3; */
     color: red;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.2em;
 }
